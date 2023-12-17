@@ -3,9 +3,7 @@
 
 void setValue(int* x){ // Very important. Everything in this function has its own memory address
     printf("the value of x: %i\n", x); // the pass by value of x is the integer value from the variable a which is 6
-    *x = 9999; // we update the memory value of x from 6 to 9999 in this instance the variable is a
-    // int x = &x;
-    // x = *y;
+    *x = 9999; // We dereference the value of &a (a's memory address) from 6 to 9999
     printf("the value of x: %i\n", x); //
     printf("x address: %p\n", (void*)&x);
 
@@ -33,6 +31,7 @@ int main() {
 
     int a = 6;
     printf("a is: %d\n", a);
+    printf("a address: %p\n", (void*)&a);
     setValue(&a);
     printf("a is: %d\n", a);
 
