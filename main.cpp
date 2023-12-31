@@ -17,7 +17,7 @@ int main() {
     std::cout << "Ready?" << std::endl;
 
     int x = 5;
-    int y = 49;
+    int y = 51;
     int* px = &x;
 
     printf("the value of x is %u\n", x); // x is the integer value
